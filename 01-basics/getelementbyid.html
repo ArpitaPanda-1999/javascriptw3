@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        const one = () => {
+            document.getElementById("demo").innerHTML = "hello world";
+            document.getElementById("demo").style.fontSize = "35px";
+            //document.getElementById("demo").display = "none";
+            //document.getElementById("demo").display = "block";
+        }
+
+        const two = () => {
+            document.write("hello Programmer");
+            window.alert("hello client");
+        }
+    </script>
+</head>
+<body>
+    <h1>What can javascript do ?</h1>
+    <p id="demo">javascript can change HTML conent.</p>
+    <p id="demo1" onclick="two()">click here also</p>
+    <button onclick="one()">Click Me!</button>
+</body>
+</html>
