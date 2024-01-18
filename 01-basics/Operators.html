@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+        //There are different types of JavaScript operators:
+
+            // Arithmetic Operators
+            //(+[Addition], -[substraction], *[multiplication], **[exponentiation],/[division], %[Modulus], ++[increment], --[Decrement])
+            let a = 2;
+            a++;
+            let b = (50 + 45) * a;
+            document.getElementById("demo").innerHTML = b; 
+
+            // Assignment Operators
+            //(=, +=, -=, *=, /=, %=, **=)
+            let x = 2;
+            //x += 5; //x = 5 + x
+            x **= 2; //also we can use a method "Math.pow(x, 2)"
+            x = Math.pow(x, 2);
+            document.getElementById("demo1").innerHTML = x;
+
+            // Comparison Operators
+            //(==[equal to], ===[equal value and not eual type], !=[not equal], !==[not equal value or not equal type], >[greater than], <[less than], >=[greater than or equal to], <=[less tham or equal to], ?[ternary])
+            let p = 3;
+            let q = 6;
+            document.getElementById("demo2").innerHTML = p <= q;
+            
+            let s = "A"; //taking ascii values
+            let w = "B";
+            document.getElementById("demo3").innerHTML = s > w
+
+            let r = "3";
+            let u = "6";
+            document.getElementById("demo4").innerHTML = r <= u;
+
+            // String Operators
+            let name = "Arpita";
+            let title = "panda"
+            document.getElementById("demo5").innerHTML = name +" "+title;
+
+            let day = "what a";
+            day += " nice day";
+            document.getElementById("demo6").innerHTML = day;
+
+            // Logical Operators
+            // (&&[logical and], ||[logical or], ![logical not])
+
+            // Bitwise Operators
+            //(&, |, ~, ^, <<, >>, >>>)
+            // Ternary Operators
+            // Type Operators
+            //(typeof[returns typr of the variable])
+    </script>
+</body>
+</html>
