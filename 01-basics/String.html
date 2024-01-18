@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h1>Javascript String</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>    
+    <p id="demo6"></p>  
+    <p id="demo7"></p>  
+    <p id="demo8"></p>  
+    <p id="demo9"></p>  
+    <p id="demo10"></p>  
+    <p id="demo11"></p>  
+    <p id="demo12"></p>  
+    <p id="demo13"></p>  
+    <p id="demo14"></p>  
+    <p id="demo15"></p>  
+    <p id="demo16"></p>  
+    <p id="demo17"></p>  
+    <p id="demo18"></p>  
+
+    <script>
+        let text = "John Doe";
+        document.getElementById("demo").innerHTML = text;
+
+        let carName1 = "Volvo XC60"; //Double quote
+        document.getElementById("demo1").innerHTML = carName1;
+        let carName2 = 'Volvo XC60'; //Single Quote
+        document.getElementById("demo2").innerHTML = carName2;
+
+        let answer1 = "it's alright";
+        document.getElementById("demo3").innerHTML = answer1;
+        let answer2 = "he is called 'johnny'";
+        document.getElementById("demo4").innerHTML = answer2;
+        let answer3 = 'he is called "Johnny"';
+        document.getElementById("demo5").innerHTML = answer3;
+
+        let text1 = `he's often called "johnny`;
+        document.getElementById("demo6").innerHTML = text1;
+
+        let text2 = "abcdefghijklmnopqrstuvwxyz";
+        document.getElementById("demo7").innerHTML = text2.length;
+
+        let text3 = "we are the so-called \"Vikings\" from the north";
+        document.getElementById("demo8").innerHTML = text3;
+
+        let text4 = 'it\'s alright';
+        document.getElementById("demo9").innerHTML = text4;
+
+        let text5 = "The Character \\ is called backslash";
+        document.getElementById("demo10").innerHTML = text5;
+
+        document.getElementById("demo11").innerHTML = "hello world!";
+
+        document.getElementById("demo12").innerHTML = "Hello" + "World";
+
+        let text6 = `The quick
+                    brown fox
+                    jumps over
+                    the lazy dog`;
+        document.getElementById("demo13").innerHTML = text6;
+
+        let x = "John";
+        let y = new String("John");//convert to string
+        document.getElementById("demo14").innerHTML = typeof x +"   "+typeof y;
+        document.getElementById("demo15").innerHTML = (x == y);
+        document.getElementById("demo16").innerHTML = (x === y);
+
+        let a = new String("John");
+        let b = new String("John");//object can't be compared
+        document.getElementById("demo17").innerHTML = (a == b);
+        document.getElementById("demo18").innerHTML = (a === b);
+    </script>
+</body>
+</html>
