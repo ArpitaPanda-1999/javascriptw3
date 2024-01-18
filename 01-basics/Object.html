@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        let car = "fiat";
+        document.getElementById("demo").innerHTML = car;
+
+        const cars = {type:"fiat", model:"500", color:"white"};
+        document.getElementById("demo1").innerHTML = cars["model"];
+        //document.getElementById("demo1").innerHTML = cars.model;
+
+        const person = {
+            firstName: "John",
+            lastName : "Doe",
+            id  : 5566,
+            fullName : function(a, b) {
+                return firstName + " " + lastName;
+            }
+        };
+        document.getElementById("demo2").innerHTML = person.fullName(firstName, lastName);
+    </script>
+</body>
+</html>
