@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>    
+    <p id="demo16"></p>    
+    <p id="demo17"></p>    
+    <p id="demo18"></p>    
+    <p id="demo19"></p>    
+    <p id="demo20"></p>    
+    <p id="demo21"></p>    
+    <p id="demo22"></p>    
+    <p id="demo23"></p>    
+    <p id="demo24"></p>    
+    <p id="demo25"></p>    
+    <p id="demo26"></p>    
+    <p id="demo27"></p>    
+
+    <script>
+        let text = "please locate where 'locate' occurs!";
+        document.getElementById("demo").innerHTML = text.indexOf("locate");
+
+        document.getElementById("demo1").innerHTML = text.indexOf("John");
+
+        document.getElementById("demo4").innerHTML = text.indexOf("locate", 15);
+
+        document.getElementById("demo2").innerHTML = text.lastIndexOf("locate");
+
+        document.getElementById("demo3").innerHTML = text.lastIndexOf("John");
+
+        document.getElementById("demo4").innerHTML = text.lastIndexOf("locate", 15);
+
+       document.getElementById("demo5").innerHTML = text.search("locate");
+
+       document.getElementById("demo6").innerHTML = text.search(/locate/);
+       
+       let text1 = "The rain in SPAIN starys mainly in the plain";
+       document.getElementById("demo7").innerHTML = text1.match("ain");
+
+       document.getElementById("demo8").innerHTML = text1.match(/ain/);
+
+       document.getElementById("demo9").innerHTML = text1.match(/ain/g);
+
+       document.getElementById("demo10").innerHTML = text1.match(/ain/gi);
+       
+       let text2 = "I love cats. Cats are very to love. Cats are very popular."
+       document.getElementById("demo11").innerHTML = Array.from(text2.matchAll("Cats"));
+
+       document.getElementById("demo12").innerHTML = Array.from(text2.matchAll(/Cats/g));
+
+       document.getElementById("demo13").innerHTML = Array.from(text2.matchAll(/cats/gi));
+       
+       let text3 = "Hello world, welcome to the universe.";
+       document.getElementById("demo14").innerHTML = text3.includes("world");
+
+       document.getElementById("demo15").innerHTML = text3.includes("hi");
+    
+       document.getElementById("demo16").innerHTML = text3.startWith("Hello");
+       
+       document.getElementById("demo17").innerHTML = text3.startsWith("world");
+
+       document.getElementById("demo18").innerHTML = text3.startsWith("world", 5);
+     
+       document.getElementById("demo19").innerHTML = text3.startsWith("world", 6);
+        
+       let text4 = "John Doe";
+       document.getElementById("demo20").innerHTML = text4.endsWith("Doe");
+
+       document.getElementById("demo21").innerHTML = text3.endsWith("world", 11);
+
+       
+    </script>
+</body>
+</html>
