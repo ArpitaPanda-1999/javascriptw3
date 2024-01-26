@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <script>
+        let text = "abcdefghijklmnopqrstuvwxyz";
+        let text1 = "  hi it's me   ";
+        let text2 = "A";
+
+        document.getElementById("demo").innerHTML = text.length;
+
+        document.getElementById("demo1").innerHTML = text.charAt(4);
+
+        document.getElementById("demo2").innerHTML = text.charCodeAt(3);
+
+        //document.getElementById("demo3").innerHTML = text.at(3);
+        document.getElementById("demo3").innerHTML = text[3];
+
+        document.getElementById("demo4").innerHTML = text[4];
+
+        document.getElementById("demo5").innerHTML = text.slice(3,5);
+
+        document.getElementById("demo6").innerHTML = text.substring(3,5);
+
+        document.getElementById("demo7").innerHTML = text.substr(3,6);
+
+        document.getElementById("demo8").innerHTML = text.toUpperCase();
+
+        document.getElementById("demo9").innerHTML = text.toLowerCase();
+
+        document.getElementById("demo10").innerHTML = text.concat(text, text1);
+
+        document.getElementById("demo11").innerHTML = "the original one:- " + text1.length + " this is the trim one : " + (text1.trim()).length;
+
+        document.getElementById("demo12").innerHTML = text1.trimStart();
+
+        document.getElementById("demo13").innerHTML = text1.trimEnd();
+
+        document.getElementById("demo14").innerHTML = text2.padStart(4,"x");
+
+        document.getElementById("demo15").innerHTML = text2.padEnd(5,0);
+
+        document.getElementById("demo16").innerHTML = text2.repeat(3);
+
+        document.getElementById("demo17").innerHTML = text1.replace( "hi","hello");
+
+        document.getElementById("demo18").innerHTML = text1.replaceAll(text1,"hello world");
+
+        document.getElementById("demo19").innerHTML = text.split("abc");
+    </script>
+</body>
+</html>
