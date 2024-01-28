@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <p id="demo15"></p>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
+    <p id="demo19"></p>
+    <p id="demo20"></p>
+    <p id="demo21"></p>
+    <p id="demo22"></p>
+    <p id="demo23"></p>
+    <p id="demo24"></p>
+    <p id="demo25"></p>
+    <p id="demo26"></p>
+    <p id="demo27"></p>
+    <p id="demo28"></p>
+    <p id="demo29"></p>
+    <p id="demo30"></p>
+    <p id="demo31"></p>
+    <p id="demo32"></p>
+    <p id="demo33"></p>
+    <p id="demo34"></p>
+    <p id="demo35"></p>
+    <p id="demo36"></p>
+    <p id="demo37"></p>
+    <p id="demo38"></p>
+    <p id="demo39"></p>
+    <p id="demo40"></p>
+    <p id="demo41"></p>
+    <p id="demo42"></p>
+    <script>
+        let x = 5; //number without decimal
+        let y = 2.8; //number with decimal
+        let z = -0.5; //number with negative decimal
+        
+        let num = 123e5; //12300000
+        let num1 = 123e-5; //0.00123
+
+        let num3 = 999999999999999; //integers (numbers without a period or exponent notation) are accurate up to 15 digits
+        let num4 = 9999999999999999;
+        document.getElementById("demo").innerHTML = num3;
+        document.getElementById("demo1").innerHTML = num4;
+
+        let num5 = 0.2 + 0.1; //problem
+        document.getElementById("demo2").innerHTML = num5;
+
+        let num6 = (0.2 * 10 + 0.1 * 10) / 10; //solution
+        document.getElementById("demo3").innerHTML = num6;
+
+        let text = 10;
+        let text1 = 30;   //number - addition
+        document.getElementById("demo4").innerHTML = text + text1;
+
+        let text3 = "10";
+        let text4 = "30";  //String - concatenation
+        document.getElementById("demo5").innerHTML = text3 + text4;
+  
+        let text5 = 10;
+        let text6 = "30"; //number + string - concatenation
+        document.getElementById("demo6").innerHTML = text5 + text6;
+        
+        let text7 = "10";
+        let text8 = 30;   //number + string - concatenation
+        document.getElementById("demo7").innerHTML = text7 + text8;
+       
+        let text9 = 10;
+        let text10 = 20;
+        let text11 = "30";   //number + number + string -first add then concatenate
+        document.getElementById("demo8").innerHTML = text9 + text10 + text11;
+
+        let text12 = "30";
+        let text13 = 20;
+        let text14 = 10;    //string + string + number - whole element concatenate
+        document.getElementById("demo9").innerHTML = text12 + text13 + text14;
+  
+        let text15 = 30;
+        let text16 = "20";
+        let text17 = 10;    //string + number + string - whole element concatenate
+        document.getElementById("demo10").innerHTML = text15 + text16 + text17;
+   
+        let num7 = 100; 
+        document.getElementById("demo11").innerHTML = num7.toString(); //convert number to string
+        document.getElementById("demo12").innerHTML = typeof(num7);
+        
+        let num8 = "100";
+        document.getElementById("demo13").innerHTML = typeof(num8);
+        document.getElementById("demo14").innerHTML = typeof(parseInt(num8));
+        
+        let num9 = "100";
+        let num10 = "10"; //javascript will convert string to number when dividing
+        document.getElementById("demo15").innerHTML = num9/num10;
+        
+        let num11 = "100";
+        let num12 = "10"; //javascript will convert string to number when multiple
+        document.getElementById("demo16").innerHTML = num11 * num12;
+        
+        let num13 = "100";
+        let num14 = "10"; //javascript will convert string to number when substracting
+        document.getElementById("demo17").innerHTML = num13 - num14;
+        
+        let num15 = "100";
+        let num16 = "10"; //javascript will convert string to number when additing
+        document.getElementById("demo18").innerHTML = num15 + num16;
+
+        document.getElementById("demo19").innerHTML = 100 / "apple";//string element can't change into number
+        
+        document.getElementById("demo20").innerHTML = 100 / "10"; //string number can convert into number
+
+        let x1 = 100 / "Apple";
+        document.getElementById("demo21").innerHTML = isNaN(x1);
+
+        let x2 = NaN;
+        let x3 = 5;
+        document.getElementById("demo22").innerHTML = x2 + x3;
+        document.getElementById("demo23").innerHTML = isNaN(x2 + x3);
+        document.getElementById("demo24").innerHTML = typeof(x2 + x3);
+        
+        let x4 = NaN;
+        let x5 = "5";
+        document.getElementById("demo25").innerHTML = x4 + x5;
+        document.getElementById("demo26").innerHTML = isNaN(x4 + x5);
+        document.getElementById("demo27").innerHTML = typeof(x4 + x5);
+
+        let myNumber = 2;
+        let temp = "";
+        while(myNumber != Infinity){
+            myNumber = myNumber * myNumber;
+            temp += myNumber + "<br>";
+        }
+        document.getElementById("demo28").innerHTML = temp;
+
+        document.getElementById("demo29").innerHTML = 2 / 0;
+        document.getElementById("demo30").innerHTML = -2 / 0;
+        document.getElementById("demo31").innerHTML = 0 / 0;
+
+        document.getElementById("demo32").innerHTML = typeof(Infinity);
+        document.getElementById("demo33").innerHTML = typeof(-Infinity);
+
+        document.getElementById("demo34").innerHTML = typeof(0xFF);
+        document.getElementById("demo35").innerHTML = 0xFF;
+        document.getElementById("demo36").innerHTML = 0xFF + 1;
+
+        let x6 = 123;
+        let x7 = new Number(123);
+        document.getElementById("demo37").innerHTML = typeof(x6);
+        document.getElementById("demo38").innerHTML = typeof(x7);
+
+        let x8 = 500;
+        let x9 = new Number(500);
+        document.getElementById("demo39").innerHTML = (x8 == x9); //number and number object can't be safely compared
+        document.getElementById("demo40").innerHTML = (x8 === x9); //number and number object can't be safely compared
+
+        let x10 = new Number(500);
+        let x11 = new Number(500);
+        document.getElementById("demo41").innerHTML = (x10 == x11); //object and object can't be prepared
+        document.getElementById("demo42").innerHTML = (x10 === x11);  //object and object can't be prepared
+    </script>
+</body>
+</html>
